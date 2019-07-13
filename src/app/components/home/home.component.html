@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-5">
+      <h2>Add a Link</h2>
+      <form>
+        <div class="form-group">
+          <label>Title</label>
+          <input type="text" class="form-control" placeholder="Title" #newTitle>
+        </div>
+        <div class="form-group">
+          <label>Link</label>
+          <input type="text" class="form-control" placeholder="Link" #newLink>
+        </div>
+        <button type="submit" class="btn btn-primary" (click)="addArticle(newTitle,newLink)">Submit</button>
+      </form>
+    </div>
+    <div class="col-md-7">
+      <app-article *ngFor="let article of sortedArticles()" [article]="article"></app-article>
+    </div>
+  </div>
+</div>

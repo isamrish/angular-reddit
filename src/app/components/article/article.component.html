@@ -1,0 +1,30 @@
+<div class="container mb-5">
+  <div class="row p-4" style="border: 1px solid black">
+    <div class="col-md-4 d-flex">
+      <div style="height:150px;width:150px; background-color: beige"
+        class="d-flex justify-content-center align-items-center flex-column">
+        <div style="font-size:40px" class="text-center">
+          {{ article.votes}}
+        </div>
+        <div class="text-uppercase text-center font-weight-bold">
+          Points
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div class="pb-3">
+        <a href={{article.link}} target="_blank" class="text-decoration-none text-dark h3">
+          {{article.title}}
+        </a>
+      </div>
+      <ul class="list-group list-group-horizontal">
+        <li class="list-group-item"><a href (click)="voteUp()" class="text-decoration-none">
+            <fa name="arrow-up pr-3"></fa>UpVote
+          </a></li>
+        <li class="list-group-item"> <a href (click)="voteDown()" class="text-decoration-none">
+            <fa name="arrow-down pr-3"></fa>DownVote
+          </a></li>
+      </ul>
+    </div>
+  </div>
+</div>
