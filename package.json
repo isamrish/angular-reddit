@@ -24,7 +24,7 @@
     "core-js": "^2.5.4",
     "font-awesome": "^4.7.0",
     "foundation-sites": "^6.5.3",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "popper.js": "^1.15.0",
     "rxjs": "~6.3.3",
     "semantic-ui": "^2.4.2",
